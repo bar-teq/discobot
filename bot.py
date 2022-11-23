@@ -22,24 +22,6 @@ async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
 
-# @bot.event
-# async def on_ready():
-#     # (name='test'))
-#     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="cene ETH"))
-#     guild = discord.utils.find(lambda g: g.name == GUILD, bot.guilds)
-#     print(
-#         f'{bot.user} is connected to the following guild:\n'
-#         f'{guild.name}(id: {guild.id})')
-#     while not bot.is_closed():
-#         channel = bot.get_channel(542748371912491049)
-#         url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h"
-#         response = requests.get(url)
-#         data = response.json()
-#         eth_price = data[0]['current_price']
-#         await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"ETH {eth_price}$"))
-#         # await channel.send(data[0]['price_change_percentage_1h_in_currency'])
-#         await asyncio.sleep(60)
-
 
 @ bot.command()
 async def pis(ctx):
